@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, .card::before {
+    background:url(./img/tree-736885_1280\ \(1\).jpg);
+    background-position: 40%;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2 {
+    font-family: 'Inconsolata', sans-serif;
+    color: rgb(206, 206, 206);
+}
+
+h1 {
+    font-size: 4vmin;
+    letter-spacing: .6vmin;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.7vmin;
+    letter-spacing: .3vmin;
+
+}
+
+.card {
+    position: relative;
+    width: 70vmin;
+    height: 50vmin;
+    background: rgba(255, 255, 255, 0.2);
+    border: .1vmin solid rgba(255, 99, 71, .4);
+    border-radius: 4vmin;
+    overflow: hidden;
+    box-shadow: 0.5vmin 1vmin rgba(0, 0, 0, .4);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(4.5vmin);
+    margin: -5vmin;
+}
+
+.innercard  {
+    position: relative;
+    width: 70vmin;
+    height: 50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    position: absolute;
+    top: 16vmin;
+}
+
+.button {
+    position: absolute;
+    bottom: 18vmin;
+}
+
+button {
+    height: 8vmin;
+    width: 30vmin;
+    background:#0000cd;
+    border: none;
+    border-radius: 5vmin;
+    outline: transparent;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background: #fa8072;
+    box-shadow: 0 0 .5vmin #c0c0c0;
+}
+
+
+@media (min-width:731px) {
+
+    h1 {
+        font-size: 3vmin;
+    }
+
+    h2 {
+        font-size: 2.4vmin;
+    }
+
+    .card, .innercard {
+        width: 60vmin;
+        height: 45vmin;
+    }
+
+    .text {
+        top: 15vmin;
+    }
+
+    .button {
+        bottom: 16vmin;
+    }
+
+    button {
+        width: 25vmin;
+        height: 7vmin;
+    }
+}
+/*
+.box {
+    border: 1px solid black;
+    height: 240px;
+    width: 400px;
+    margin: 50px auto;
+    margin-top: 90px;
+    background: url(./img/DD-Dirty-Texture-56453-Preview.jpg);
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 2px 4px 18px 5px;
+    color: currentColor;
+    opacity: 0.8;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+
+}
+
+.box:hover {
+    box-shadow: 3px 6px 28px 7px;
+}
+
+img { 
+    position: absolute;
+    left: 56%;
+    top: 13%;
+}
+
+h {
+    font-family: kelly slab,cursive;
+    color: wheat;
+    font-size: 28px;
+    position: absolute;
+    left: 37%;
+    top: 36%;
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-family: kelly slab,cursive;
+    color: wheat;
+    font-size: 12px;
+    position: absolute;
+    left: 37%;
+    top: 40%;
+    font-weight: normal;
+    opacity: 0.2;
+}
+
+h4 {
+    font-family: kelly slab,cursive;
+    color: wheat;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    font-weight: normal;
+    line-height: -10px;
+    opacity: 0.3;
+}
+
+t {
+    font-family: kelly slab, cursive;
+    color: wheat;
+    font-size: 12px;
+    position: absolute;
+    left: 52%;
+    top: 43.4%;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: kelly slab,cursive;
+    color: wheat;
+    font-weight: normal;
+    position: absolute;
+    left: 37%;
+    top: 48%;
+    letter-spacing: 3px;
+}*/
